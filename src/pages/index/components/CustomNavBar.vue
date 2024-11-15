@@ -4,7 +4,7 @@
     :style="{ paddingTop: safeAreaInsets?.top + 'px' }"
   >
     <!-- logo and literal text -->
-    <view class="logo">
+    <view class="logo-zone">
       <image
         class="logo-image"
         mode="widthFix"
@@ -40,10 +40,16 @@ const searchText = ref<string>("");
   padding-bottom: 20rpx;
   padding-right: 50rpx;
 
-  .logo {
-    margin-top: 20rpx;
+  .logo-zone {
+    margin-top: 17rpx;
+    .iteral-text {
+      font-size: 20rpx;
+    }
     .logo-image {
-      width: 85rpx;
+      width: 70rpx;
+      padding-right: 20rpx;
+      margin-right: 20rpx;
+      border-right: 1px solid black;
     }
   }
 
@@ -55,7 +61,7 @@ const searchText = ref<string>("");
       width: 100%;
       height: 60rpx;
       border-radius: 40rpx;
-      background-color: #D0EFF9;
+      background-color: #d0eff9;
     }
   }
 }

@@ -3,7 +3,8 @@
   <scroll-view scroll-y class="scroll-view">
     <WecSwiper :list="bannerList" />
     <view class="container">
-<Schedule />
+      <Schedule />
+      <WecNotice text="系统新版本更新啦,请及时更新,带给您多一分保障."/>
     </view>
   </scroll-view>
 </template>

@@ -91,7 +91,10 @@ list.value = staticDataSet;
 .container {
   .text {
     font-size: large;
+    font-weight: bold;
     margin-bottom: 20rpx;
+    color: #9D9560;
+    font-family:Georgia, 'Times New Roman', Times, serif
   }
   .title-zone {
     display: flex;
@@ -102,6 +105,7 @@ list.value = staticDataSet;
     }
   }
   .display-zone {
+    font-size: 30rpx;
     display: flex;
     align-content: space-between;
     flex-wrap: wrap;
@@ -111,7 +115,7 @@ list.value = staticDataSet;
       flex-direction: column;
       align-items: center;
       .image-item {
-        width: 70rpx;
+        width: 64rpx;
         border: 1px solid #303030;
         border-radius: 50%;
         padding: 10rpx;
