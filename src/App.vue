@@ -10,4 +10,35 @@ onHide(() => {
   console.log("App Hide");
 });
 </script>
-<style></style>
+<style>
+view,
+navigator,
+input,
+scroll-view {
+  box-sizing: border-box;
+}
+
+button::after {
+  border: none;
+}
+
+swiper,
+scroll-view {
+  height: 100%;
+  overflow: hidden;
+}
+
+image {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+</style>

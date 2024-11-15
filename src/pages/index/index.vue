@@ -4,7 +4,7 @@
     <WecSwiper :list="bannerList" />
     <view class="container">
       <Schedule />
-      <WecNotice text="系统新版本更新啦,请及时更新,带给您多一分保障."/>
+      <WecNotice v-for="item in 10" text="系统新版本更新啦,请及时更新,带给您多一分保障."/>
     </view>
   </scroll-view>
 </template>
