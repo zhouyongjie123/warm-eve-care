@@ -2,12 +2,16 @@
   <CustomNavBar />
   <scroll-view scroll-y class="scroll-view">
     <WecSwiper :list="bannerList" />
+    <view class="container">
+<Schedule />
+    </view>
   </scroll-view>
 </template>
 
 <script setup lang="ts">
 import type { BannerItem } from "@/types/home";
 import CustomNavBar from "./components/CustomNavBar.vue";
+import Schedule from "./components/Schedule.vue";
 const bannerList: BannerItem[] = [
   {
     id: 1,
@@ -32,5 +36,10 @@ page {
 
 .scroll-view {
   flex: 1;
+
+  .container {
+    padding: 0 24rpx;
+    padding-top: 20rpx;
+  }
 }
 </style>
